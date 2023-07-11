@@ -28,8 +28,17 @@ func about(w http.ResponseWriter, r *http.Request) {
 	tmpl.Execute(w, developer)
 }
 
+func contact(w http.ResponseWriter, r *http.Request) {
+	tmpl, _ := template.ParseFiles("templates/contact.html")
+
+	developer := Developer{"Дмитро", "НУВГП", 2023, "https://t.me/NOD_Reaper"}
+
+	tmpl.Execute(w, developer)
+}
+
 func main() {
 	http.HandleFunc("/", index)
 	http.HandleFunc("/about/", about)
+	http.HandleFunc("/contact/", contact)
 	http.ListenAndServe(":8080", nil)
 }

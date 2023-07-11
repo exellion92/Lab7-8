@@ -1,109 +1,121 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Я</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    rel="stylesheet"
+  />
   </head>
-  <body>
-    <div class="container">
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a
-            class="nav-link active"
-            id="tab1-tab"
-            data-bs-toggle="tab"
-            href="#tab1"
-            role="tab"
-            aria-controls="tab1"
-            aria-selected="true"
-            >Моє хоббі</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            id="tab2-tab"
-            data-bs-toggle="tab"
-            href="#tab2"
-            role="tab"
-            aria-controls="tab2"
-            aria-selected="false"
-            >Моя пристрасть</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            id="tab3-tab"
-            data-bs-toggle="tab"
-            href="javascript:void(0);"
-            onclick="window.location.href='/'"
-            role="tab"
-            aria-controls="tab3"
-            aria-selected="false"
-            >Home</a
-          >
-        </li>
-      </ul>
+  <body class="bg-dark">
+    <header>
+      <div class="container animate__animated animate__fadeIn">
+        <nav>
+          <ul class="nav nav-tabs justify-content-center">
+            <li class="nav-item">
+              <a
+                class="nav-link text-danger fs-1 active"
+                id="tab1-tab"
+                data-bs-toggle="tab"
+                href="#tab1"
+                role="tab"
+                aria-controls="tab1"
+                aria-selected="true"
+                >Моє хобі</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-warning fs-1"
+                id="tab2-tab"
+                data-bs-toggle="tab"
+                href="#tab2"
+                role="tab"
+                aria-controls="tab2"
+                aria-selected="false"
+                >Моя пристрасть</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fs-1 text-light"
+                id="tab3-tab"
+                data-bs-toggle="tab"
+                href="javascript:void(0);"
+                onclick="window.location.href='/'"
+                role="tab"
+                aria-controls="tab3"
+                aria-selected="false"
+                >Home</a
+              >
+            </li>
+          </ul>
+        </nav>
+    </header>
 
-      <div class="tab-content">
+    <main>
+      <div class="tab-content fs-4 text-light animate__animated animate__fadeIn">
         <div
-          class="tab-pane fade show active"
+          class="tab-pane fade show active container"
           id="tab1"
           role="tabpanel"
           aria-labelledby="tab1-tab"
         >
-          <h3>Моє хоббі - малювання</h3>
-          <p>
+          <h3 class="fs-1">Моє хобі - малювання</h3>
+          <p class="fs-1">
             Я завжди був захоплений мистецтвом і відкрив для себе радість
             малювання. Кожен раз, коли я беру пензель у руки, відчуваю велике
             задоволення та творчий потенціал.
           </p>
-          <p>
+          <p class="fs-1">
             Малювання дозволяє мені виразити свої почуття, передати настрій та
             подорожувати у світ фантазії. Я обожнюю експериментувати з різними
             стилями та техніками: від реалістичного портрету до абстрактного
             живопису.
           </p>
-          <p>
-            Це хоббі, що надихає мене і дає можливість відпочити від
+          <p class="fs-1">
+            Це хобі, що надихає мене і дає можливість відпочити від
             повсякденних справ. Я також беру участь у мистецьких виставках та
             обмінююся досвідом з іншими художниками, що допомагає мені зрости як
             творчій особистості.
           </p>
-          <p>
-            Малювання - це не лише моє хоббі, але й моя пристрасть, яка надихає
+          <p class="fs-1">
+            Малювання - це не лише моє хобі, але й моя пристрасть, яка надихає
             мене на нові творчі відкриття та вираження себе через мистецтво.
           </p>
         </div>
         <div
-          class="tab-pane fade"
+          class="tab-pane fade container"
           id="tab2"
           role="tabpanel"
           aria-labelledby="tab2-tab"
         >
-          <h3>Моя пристрасть - музика</h3>
-          <p>
+          <h3 class="fs-1">Моя пристрасть - музика</h3>
+          <p class="fs-1">
             Музика завжди була важливою частиною мого життя. Я відчуваю
             неймовірну пристрасть до музики та її вплив на моє настрій та
             емоції.
           </p>
-          <p>
+          <p class="fs-1">
             Я граю на декількох музичних інструментах, зокрема на гітарі та
             клавішних. Це дозволяє мені виразити себе та створювати власну
             музику. Час, проведений за грою на інструменті, дарує мені радість
             та релаксацію.
           </p>
-          <p>
+          <p class="fs-1">
             Крім гри на інструментах, я також насолоджуюся прослуховуванням
             різних жанрів музики. Від класичної музики до року, кожен жанр має
             свою унікальну силу та здатність перенести мене в інші світи та
             емоційні стани.
           </p>
-          <p>
+          <p class="fs-1">
             Музика для мене є джерелом натхнення та способом виразити себе. Вона
             здатна змінювати настрій, піднімати дух та надихати на творчість.
             Моя пристрасть до музики ніколи не згасає, і я завжди радий
@@ -112,10 +124,11 @@
         </div>
       </div>
     </div>
+    </main>
 
-    <footer class="mt-auto bg-light text-dark py-3">
+    <footer class="mt-auto bg-warning text-center text-dark py-3 animate__animated animate__fadeIn">
       <div class="container">
-        <p>
+        <p class="my-4 animate__animated animate__bounce">
           Developed by <a href="{{ .Url }}" class="text-dark">{{ .Name }}</a>,
           {{.Year}}
         </p>
