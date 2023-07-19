@@ -1,0 +1,14 @@
+{{define "header"}}
+<header class="mb-auto">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
+      <h3 class="mb-0"></h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link text-light fw-bold fs-3 py-1 px-2 {{if eq .HeaderData.Page "home"}}active{{end}}" href="/">Home</a>
+        <a class="nav-link text-light fw-bold fs-3 py-1 px-2 {{if eq .HeaderData.Page "about"}}active{{end}}" href="/about">About</a>
+        <a class="nav-link text-light fw-bold fs-3 py-1 px-2 {{if eq .HeaderData.Page "contact"}}active{{end}}" href="/contact">Contacts</a>
+      </nav>
+    </div>
+  </div>
+</header>
+{{end}}
